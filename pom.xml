@@ -68,7 +68,7 @@
         <zookeeper.version>3.4.6</zookeeper.version>
         <jstl.version>1.2</jstl.version>
         <jna.version>3.4.0</jna.version>
-        <netty.version>4.1.19.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <websocket.version>1.1</websocket.version>
         <quartz.version>2.2.1</quartz.version>
         <javaee-api.version>7.0</javaee-api.version>
