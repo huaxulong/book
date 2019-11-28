@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Routing name="router">
+  <Routes>
+    <Script name="RoutingInit" language="JS">
+      <![CDATA[
+      if (logEvent.getMarker() != null && logEvent.getMarker().isInstanceOf("LARGE_DATA")) {
+        "LARGE_DATA";
+      }else{
+        "OTHER";
+      }
+    ]]>
+    </Script>
+    <Route key="LARGE_DATA">
+      <RollingRandomAccessFile fileName="${logDirect}/${logFileName}.data.log"
+        filePattern="${logDirect}/${logFileName}.data.%i.log"
+        name="LARGE_DATA">
+        <DefaultRolloverStrategy max="20"/>
+        <Filters>
+          <ThresholdFilter level="${loggerLogLevel}" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Filters>
+        <PatternLayout
+          pattern="[%date][%level][%logger %line][%threadId]traceLogid:[%mdc{TRACE_LOG_ID}]TxId:[%X{PtxId}]SpanId:[%X{PspanId}]dstTraceId:[%mdc{DST_TRACE_ID}]%message%n"/>
+        <Policies>
+          <SizeBasedTriggeringPolicy size="512MB"/>
+        </Policies>
+      </RollingRandomAccessFile>
+    </Route>
+
+    <Route key="OTHER">
+      <RollingRandomAccessFile fileName="${logDirect}/${logFileName}.log"
+        filePattern="${logDirect}/${logFileName}.%d{yyyy-MM-dd}.%i.log"
+        name="OTHER">
+        <DefaultRolloverStrategy max="50000"/>
+        <Filters>
+          <ThresholdFilter level="${loggerLogLevel}" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Filters>
+        <PatternLayout>
+          <MarkerPatternSelector
+            defaultPattern="[%date][%level][%logger %line][%threadId]traceLogid:[%mdc{TRACE_LOG_ID}]TxId:[%X{PtxId}]SpanId:[%X{PspanId}]dstTraceId:[%mdc{DST_TRACE_ID}]%message%n">
+            <PatternMatch key="PARAMETER"
+              pattern="[%date][%level][%logger 0][%threadId]traceLogid:[%mdc{TRACE_LOG_ID}]TxId:[%X{PtxId}]SpanId:[%X{PspanId}]dstTraceId:[%mdc{DST_TRACE_ID}][%mdc{CLASS_NAME}][%mdc{METHOD_NAME}]%message%n"/>
+            <PatternMatch key="RESPONSE"
+              pattern="[%date][%level][%logger 0][%threadId]traceLogid:[%mdc{TRACE_LOG_ID}]TxId:[%X{PtxId}]SpanId:[%X{PspanId}]dstTraceId:[%mdc{DST_TRACE_ID}][%mdc{CLASS_NAME}][%mdc{METHOD_NAME}][%mdc{ELAPSED_TIME}ms][%mdc{RESPONSE_STATUS}][%mdc{RESPONSE_CODE}]%message%n"/>
+          </MarkerPatternSelector>
+        </PatternLayout>
+        <Policies>
+          <SizeBasedTriggeringPolicy size="512MB"/>
+          <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+        </Policies>
+      </RollingRandomAccessFile>
+    </Route>
+  </Routes>
+</Routing>

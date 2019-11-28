@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="600" xmlns:xi="http://www.w3.org/2001/XInclude" status="INFO">
+  <Properties>
+    <Property name="logDirect">c:/data/appLogs</Property>
+    <Property name="logFileName">book-keepping</Property>
+    <Property name="loggerLogLevel">INFO</Property>
+  </Properties>
+  <Appenders>
+    <xi:include href="log4j2-router.xml"/>
+  </Appenders>
+  <Loggers>
+    <Logger name="com.alibaba.dubbo" level="${loggerLogLevel}" />
+    <Root level="${loggerLogLevel}" includeLocation="true">
+      <AppenderRef ref="router"/>
+    </Root>
+  </Loggers>
+</Configuration>

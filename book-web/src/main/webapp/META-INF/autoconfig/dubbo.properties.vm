@@ -1,0 +1,5 @@
+#Dubbo configuration
+dubbo.applicationName= ${dubbo.applicationName}
+dubbo.zookeeperUrl      = ${dubbo.zookeeperUrl}
+dubbo.port= ${dubbo.port}
+dubbo.timeOut           = ${dubbo.timeOut}

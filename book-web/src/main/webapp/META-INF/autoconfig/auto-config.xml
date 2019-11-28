@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- 数据库连接配置 -->
+  <group name="jdbc">
+    <property name="jdbc.url"/>
+    <property name="jdbc.username"/>
+    <property name="jdbc.password"/>
+  </group>
+
+  <!--dubbo-->
+  <group name="dubbo">
+    <property name="dubbo.applicationName"/>
+    <property name="dubbo.zookeeperUrl"/>
+    <property name="dubbo.port"/>
+    <property name="dubbo.timeOut"/>
+  </group>
+
+  <group name="logger">
+    <property name="logger.logRoot"/>
+    <property name="logger.logLevel"/>
+    <property name="logger.fileName"/>
+  </group>
+
+  <group name="micro-service-auth-consumer">
+    <property name="microServiceAuth.authKey"/>
+  </group>
+
+  <group name="bestpay">
+    <property name="bestpay.aesKey"/>
+  </group>
+
+  <group name="fastdfs">
+    <property name="fastdfs.connectTimeout"/>
+    <property name="fastdfs.networkTimeout"/>
+    <property name="fastdfs.basePath"/>
+    <property name="fastdfs.trackerServer"/>
+    <property name="fastdfs.logLevel"/>
+    <property name="fastdfs.useConnectionPool"/>
+    <property name="fastdfs.connectionPoolMaxIdleTime"/>
+    <property name="fastdfs.loadFdfsParametersFromTracker"/>
+    <property name="fastdfs.useStorageId"/>
+    <property name="fastdfs.storageIdsFilename"/>
+    <property name="fastdfs.trackerServerPort"/>
+  </group>
+
+  <!-- 文件生成配置 -->
+  <script>
+    <generate template="encrypt.properties.vm"
+      destfile="/WEB-INF/classes/properties/encrypt.properties"
+      charset="UTF-8"/>
+    <generate template="micro-service-auth-consumer.properties.vm"
+      destfile="/WEB-INF/classes/properties/micro-service-auth-consumer.properties"
+      charset="UTF-8"/>
+    <generate template="dubbo.properties.vm"
+      destfile="/WEB-INF/classes/properties/dubbo.properties"
+      charset="UTF-8"/>
+    <generate template="jdbc.properties.vm"
+      destfile="/WEB-INF/classes/properties/jdbc.properties"
+      charset="UTF-8"/>
+    <generate template="fastdfs.properties.vm"
+      destfile="/WEB-INF/classes/properties/fastdfs.properties"
+      charset="UTF-8"/>
+    <generate template="log4j2.xml.vm"
+      destfile="/WEB-INF/classes/log4j2.xml"
+      charset="UTF-8"/>
+  </script>
+
+
+</config>

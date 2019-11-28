@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.bestpay.media.platform:facial-recognition-attendance-service:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/bestpay/media/platform/facial-recognition-attendance-service/unknown/facial-recognition-attendance-service-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/bestpay/media/platform/facial-recognition-attendance-service/unknown/facial-recognition-attendance-service-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/bestpay/media/platform/facial-recognition-attendance-service/unknown/facial-recognition-attendance-service-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
