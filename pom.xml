@@ -65,7 +65,7 @@
         <hibernate-validator.version>5.4.2.Final</hibernate-validator.version>
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <zkclient.version>0.1</zkclient.version>
-        <zookeeper.version>3.4.6</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
         <jstl.version>1.2</jstl.version>
         <jna.version>3.4.0</jna.version>
         <netty.version>4.1.19.Final</netty.version>
