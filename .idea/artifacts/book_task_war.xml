@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="book-task:war">
+    <output-path>$PROJECT_DIR$/book-task/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>book-task</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="book-task.war">
+      <element id="artifact" artifact-name="book-task:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/book.iml" filepath="$PROJECT_DIR$/.idea/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-api/book-api.iml" filepath="$PROJECT_DIR$/book-api/book-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-common/book-common.iml" filepath="$PROJECT_DIR$/book-common/book-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-dal/book-dal.iml" filepath="$PROJECT_DIR$/book-dal/book-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-integration/book-integration.iml" filepath="$PROJECT_DIR$/book-integration/book-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-task/book-task.iml" filepath="$PROJECT_DIR$/book-task/book-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book-web/book-web.iml" filepath="$PROJECT_DIR$/book-web/book-web.iml" />
+    </modules>
+  </component>
+</project>

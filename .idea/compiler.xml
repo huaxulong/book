@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="book-integration" />
+        <module name="book-common" />
+        <module name="book-service" />
+        <module name="book-api" />
+        <module name="book-web" />
+        <module name="book-task" />
+        <module name="book-dal" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="book" target="1.8" />
+      <module name="book-api" target="1.8" />
+      <module name="book-common" target="1.8" />
+      <module name="book-dal" target="1.8" />
+      <module name="book-integration" target="1.8" />
+      <module name="book-service" target="1.8" />
+      <module name="book-task" target="1.8" />
+      <module name="book-web" target="1.8" />
+      <module name="bookweb" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
