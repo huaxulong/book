@@ -70,7 +70,7 @@
         <jna.version>3.4.0</jna.version>
         <netty.version>4.1.19.Final</netty.version>
         <websocket.version>1.1</websocket.version>
-        <quartz.version>2.2.1</quartz.version>
+        <quartz.version>2.3.2</quartz.version>
         <javaee-api.version>7.0</javaee-api.version>
         <resteasy-spring.version>3.6.2.Final</resteasy-spring.version>
         <commons-fileupload.version>1.3.3</commons-fileupload.version>
