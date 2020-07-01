@@ -33,7 +33,7 @@
         <lombok.version>1.18.4</lombok.version>
         <disruptor.version>3.4.2</disruptor.version>
         <org.slf4j.version>1.7.25</org.slf4j.version>
-        <log4j.version>2.11.0</log4j.version>
+        <log4j.version>2.13.3</log4j.version>
         <fastdfs.version>1.24</fastdfs.version>
         <dubbo.version>2.5.8</dubbo.version>
         <apache.commons.io.version>2.5</apache.commons.io.version>
