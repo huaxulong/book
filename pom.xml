@@ -44,7 +44,7 @@
         <validation.api.version>1.1.0.Final</validation.api.version>
         <mybatis.version>3.4.1</mybatis.version>
         <mybatis.spring.version>1.3.1</mybatis.spring.version>
-        <mysql.connector.version>5.1.21</mysql.connector.version>
+        <mysql.connector.version>8.0.16</mysql.connector.version>
         <mssql-jdbc.vesion>7.2.2.jre8</mssql-jdbc.vesion>
         <jedis.version>2.8.1</jedis.version>
         <spring.data.redis.version>1.7.1.RELEASE</spring.data.redis.version>
