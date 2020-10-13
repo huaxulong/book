@@ -39,7 +39,7 @@
         <apache.commons.io.version>2.5</apache.commons.io.version>
         <apache.commons.lang3.version>3.4</apache.commons.lang3.version>
         <apache.httpclient.version>4.5.1</apache.httpclient.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <guava.version>18.0</guava.version>
         <validation.api.version>1.1.0.Final</validation.api.version>
         <mybatis.version>3.4.1</mybatis.version>
