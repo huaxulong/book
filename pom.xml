@@ -42,7 +42,7 @@
         <junit.version>4.12</junit.version>
         <guava.version>18.0</guava.version>
         <validation.api.version>1.1.0.Final</validation.api.version>
-        <mybatis.version>3.4.1</mybatis.version>
+        <mybatis.version>3.5.6</mybatis.version>
         <mybatis.spring.version>1.3.1</mybatis.spring.version>
         <mysql.connector.version>5.1.21</mysql.connector.version>
         <mssql-jdbc.vesion>7.2.2.jre8</mssql-jdbc.vesion>
