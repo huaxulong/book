@@ -59,7 +59,7 @@
         <javax.ws.rs-api.version>2.1</javax.ws.rs-api.version>
         <jackson-annotations.version>2.9.7</jackson-annotations.version>
         <fastjson.version>1.2.53</fastjson.version>
-        <resteasy.version>3.6.2.Final</resteasy.version>
+        <resteasy.version>4.5.7.Final</resteasy.version>
         <jackson-core.version>2.5.3</jackson-core.version>
         <jackson-mapper-asl.version>1.9.12</jackson-mapper-asl.version>
         <hibernate-validator.version>5.4.2.Final</hibernate-validator.version>
